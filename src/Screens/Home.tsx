@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/Styles/Home.css";
 import WhoWeAre from "./Whoweare";
+import { Link } from "react-router-dom";
 // import { radialGradient } from "motion/react-client";
 // import Services from "../components/Services/Services";
 
@@ -16,7 +17,7 @@ const Home: React.FC = () => {
               cutting-edge technology with stunning design.
             </p>
             <div className="cta-buttons">
-              <a href="/contact" className="btn btn-primary">
+              <Link to="/contact" className="btn btn-primary">
                 Get Started
                 <svg
                   className="arrow-icon"
@@ -32,7 +33,7 @@ const Home: React.FC = () => {
                     d="M14 5l7 7m0 0l-7 7m7-7H3"
                   />
                 </svg>
-              </a>
+              </Link>
               <a href="#" className="btn btn-secondary">
                 Our Work
               </a>
@@ -63,6 +64,7 @@ const Home: React.FC = () => {
       </div>
       <div>
         <WhoWeAre />
+        
       </div>
       {/* <Services/> */}
     </div>
@@ -70,17 +72,3 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-
-
-
-
-
-// if i <= 1 return false
-
-// for i in range(1, math.sqrt(n)):
-// {
-//     if n % i == 0:
-//     return false
-
-//     return true
-// }

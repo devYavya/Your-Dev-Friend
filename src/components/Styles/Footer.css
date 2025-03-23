@@ -8,7 +8,7 @@
 }
 
 .footer-container {
-    background: rgb(0, 0, 0);
+    background-color: black;
     margin: 0 auto;
     padding: 0 6.5rem;
 }
@@ -85,7 +85,7 @@
 }
 
 .footer-divider {
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid #1e293b;
     margin: 2rem 0;
 }
 
