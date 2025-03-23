@@ -50,7 +50,7 @@ const values = [
 const ValueCard: React.FC<{
   title: string;
   description: string;
-  icon: JSX.Element;
+  icon: React.ReactNode;
 }> = ({ title, description, icon }) => (
   <div className="value-card">
     <div className="who-icon-container">
