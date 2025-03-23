@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
             <ul className="footer-links">
               <li><Link to="/web-development">Web Development</Link></li>
               <li><Link to="/ui-ux-design">UI/UX Design</Link></li>
-              <li><Link to="/digital-strategy">Digital Strategy</Link></li>
+              <li><Link to="/testing">Testing</Link></li>
             </ul>
           </div>
 

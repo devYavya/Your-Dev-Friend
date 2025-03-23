@@ -20,8 +20,8 @@ const services = [
     icon: <FaMobileAlt className="service-icon" />,
   },
   {
-    title: "SEO & Digital Marketing",
-    description: "Optimizing websites for search engines and digital growth.",
+    title: "SEO & Testing Services",
+    description: "Optimizing websites for search engines and providing testing services to make it more user-friendly.",
     icon: <FaChartLine className="service-icon" />,
   },
 ];
@@ -42,17 +42,6 @@ const ServicesPage: React.FC = () => {
             <button className="service-btn">Learn More</button>
           </div>
         ))}
-      </div>
-      <div className="testimonials-section">
-        <h2 className="testimonials-title">What Our Clients Say</h2>
-        <p className="testimonial">
-          "This team delivered an amazing website! Highly recommend their
-          services." - John Doe
-        </p>
-        <p className="testimonial">
-          "The UX design was outstanding and helped improve our conversions." -
-          Jane Smith
-        </p>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/Styles/Home.css";
 import WhoWeAre from "./Whoweare";
+// import { radialGradient } from "motion/react-client";
 // import Services from "../components/Services/Services";
 
 const Home: React.FC = () => {
@@ -15,7 +16,7 @@ const Home: React.FC = () => {
               cutting-edge technology with stunning design.
             </p>
             <div className="cta-buttons">
-              <a href="#" className="btn btn-primary">
+              <a href="/contact" className="btn btn-primary">
                 Get Started
                 <svg
                   className="arrow-icon"
@@ -60,10 +61,26 @@ const Home: React.FC = () => {
           </svg>
         </div> */}
       </div>
-      <WhoWeAre />
+      <div>
+        <WhoWeAre />
+      </div>
       {/* <Services/> */}
     </div>
   );
 };
 
 export default Home;
+
+
+
+
+
+// if i <= 1 return false
+
+// for i in range(1, math.sqrt(n)):
+// {
+//     if n % i == 0:
+//     return false
+
+//     return true
+// }

@@ -26,9 +26,9 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       <div className={`nav-links ${isOpen ? "active" : ""}`}>
-        {/* <Link to="/about" onClick={() => setIsOpen(false)}>
-          About Us
-        </Link> */}
+        <Link to="/" onClick={() => setIsOpen(false)}>
+          Home
+        </Link>
         <Link to="/services" onClick={() => setIsOpen(false)}>
           Services
         </Link>
