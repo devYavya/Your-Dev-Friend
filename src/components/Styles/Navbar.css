@@ -118,6 +118,13 @@
 .nav-links a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+.nav-divider
+{
+  border-top: 1px solid #9dc3ff;
+    margin: 0;
+    width: 80%;
+    margin-left: 10%;
+}
 
 /* Larger screens */
 @media (min-width: 1024px) {

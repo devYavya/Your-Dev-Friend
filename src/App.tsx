@@ -7,7 +7,8 @@ import Footer from "./components/ui/Footer";
 import ContactPage from "./components/Services/ContactPage";
 import ExpertiseSection from "./components/Services/ExpertiseSection";
 import Testimonials from "./Screens/Testimonial";
-import UnderConstruction from "./components/ui/UnderContruction";
+// import UnderConstruction from "./components/ui/UnderContruction";
+import OurWork from "./Screens/OurWork";
 
 const App: React.FC = () => {
   return (
@@ -19,7 +20,7 @@ const App: React.FC = () => {
         <Route path="/contact" element={<ContactPage />}></Route>
         <Route path="/solutions" element={<ExpertiseSection />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/our-work" element={<UnderConstruction />} />
+        <Route path="/our-work" element={<OurWork />} />
       </Routes>
       <Footer />
     </>

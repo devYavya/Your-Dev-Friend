@@ -10,48 +10,52 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="navbar">
-      <Link to="/">
-        <div className="logo">
-          {/* <img src="./devlogo.svg" alt="Your-Dev-Friend" /> */}
-          TechEz Solutions
-        </div>
-      </Link>
+    <>
+      {" "}
+      <nav className="navbar">
+        <Link to="/">
+          <div className="logo">
+            {/* <img src="./devlogo.svg" alt="Your-Dev-Friend" /> */}
+            BytesSphere Digital
+          </div>
+        </Link>
 
-      <div className="menu-toggle" onClick={toggleMenu}>
-        <div className={`hamburger ${isOpen ? "active" : ""}`}>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div className="menu-toggle" onClick={toggleMenu}>
+          <div className={`hamburger ${isOpen ? "active" : ""}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-      </div>
-      <div className={`nav-links ${isOpen ? "active" : ""}`}>
-        <Link to="/" onClick={() => setIsOpen(false)}>
-          Home
-        </Link>
-        <Link to="/services" onClick={() => setIsOpen(false)}>
-          Services
-        </Link>
-        <Link to="/solutions" onClick={() => setIsOpen(false)}>
-          Solutions
-        </Link>
-        {/* <Link to="/case-studies" onClick={() => setIsOpen(false)}>
+        <div className={`nav-links ${isOpen ? "active" : ""}`}>
+          <Link to="/" onClick={() => setIsOpen(false)}>
+            Home
+          </Link>
+          <Link to="/services" onClick={() => setIsOpen(false)}>
+            Services
+          </Link>
+          <Link to="/solutions" onClick={() => setIsOpen(false)}>
+            Solutions
+          </Link>
+          {/* <Link to="/case-studies" onClick={() => setIsOpen(false)}>
           Case Studies
         </Link> */}
-        <Link to="/testimonials" onClick={() => setIsOpen(false)}>
-          Testimonials
-        </Link>
-        {/* <Link to="/portfolio" onClick={() => setIsOpen(false)}>
+          <Link to="/testimonials" onClick={() => setIsOpen(false)}>
+            Testimonials
+          </Link>
+          {/* <Link to="/portfolio" onClick={() => setIsOpen(false)}>
           Portfolio
         </Link>
         <Link to="/process" onClick={() => setIsOpen(false)}>
           Process
         </Link> */}
-        <Link to="/contact" onClick={() => setIsOpen(false)}>
-          Contact
-        </Link>
-      </div>
-    </nav>
+          <Link to="/contact" onClick={() => setIsOpen(false)}>
+            Contact
+          </Link>
+        </div>
+      </nav>
+      <div className="nav-divider"></div>
+    </>
   );
 };
 
