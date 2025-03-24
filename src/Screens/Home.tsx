@@ -34,9 +34,9 @@ const Home: React.FC = () => {
                   />
                 </svg>
               </Link>
-              <a href="#" className="btn btn-secondary">
+              <Link to="/our-work" className="btn btn-secondary">
                 Our Work
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -64,7 +64,6 @@ const Home: React.FC = () => {
       </div>
       <div>
         <WhoWeAre />
-        
       </div>
       {/* <Services/> */}
     </div>

@@ -13,8 +13,8 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <Link to="/">
         <div className="logo">
-          <img src="./devlogo.svg" alt="Your-Dev-Friend" />
-          Your-Dev-Friend
+          {/* <img src="./devlogo.svg" alt="Your-Dev-Friend" /> */}
+          TechEz Solutions
         </div>
       </Link>
 
