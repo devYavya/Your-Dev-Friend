@@ -1,60 +1,81 @@
 import React from "react";
-import { motion } from "framer-motion";
 import "../components/Styles/OurWork.css";
 
-const projects = [
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+}
+
+const projects: Project[] = [
   {
+    id: 1,
+    title: "E-Commerce Website",
+    description:
+      "A fully responsive e-commerce platform with a seamless checkout experience.",
+    image: "./webd.avif",
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "Portfolio Website",
+    description:
+      "A sleek personal portfolio showcasing creative works and projects.",
+    image: "./webd.avif",
+    link: "#",
+  },
+  {
+    id: 3,
     title: "Restaurant Ordering System",
-    description: "A seamless online food ordering system with payments.",
-    link: "https://restaurant.example.com",
-    image: "https://via.placeholder.com/300x200?text=Restaurant+Ordering",
+    description: "An intuitive food ordering system with real-time tracking.",
+    image: "./webd.avif",
+    link: "#",
   },
   {
-    title: "Product Management System",
-    description:
-      "A CLI-based product management tool with full CRUD operations.",
-    link: "https://productms.example.com",
-    image: "https://via.placeholder.com/300x200?text=Product+Management",
+    id: 3,
+    title: "Restaurant Ordering System",
+    description: "An intuitive food ordering system with real-time tracking.",
+    image: "./webd.avif",
+    link: "#",
   },
   {
-    title: "Library Management System",
-    description: "A system to manage book inventory and availability.",
-    link: "https://libraryms.example.com",
-    image: "https://via.placeholder.com/300x200?text=Library+Management",
+    id: 3,
+    title: "Restaurant Ordering System",
+    description: "An intuitive food ordering system with real-time tracking.",
+    image: "./webd.avif",
+    link: "#",
   },
   {
-    title: "Selenium Test Automation Suite",
-    description:
-      "Comprehensive Selenium test suite with POM and cross-browser testing.",
-    link: "https://seleniumtests.example.com",
-    image: "https://via.placeholder.com/300x200?text=Selenium+Testing",
+    id: 3,
+    title: "Restaurant Ordering System",
+    description: "An intuitive food ordering system with real-time tracking.",
+    image: "./webd.avif",
+    link: "#",
   },
 ];
 
-const OurWork: React.FC = () => {
+const OuerWork: React.FC = () => {
   return (
-    <div className="our-work-container">
-      {projects.map((project, index) => (
-        <motion.div
-          key={index}
-          whileHover={{ scale: 1.05 }}
-          className="our-work-card"
-        >
-          <div className="custom-card">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="custom-card-image"
-            />
-            <div className="custom-card-content">
-              <h2 className="custom-card-title">{project.title}</h2>
-              <p className="custom-card-description">{project.description}</p>
+    <section className="project-showcase">
+      <h2>Our Works</h2>
+      <div className="project-grid">
+        {projects.map((project) => (
+          <div className="project-card" key={project.id}>
+            <img src={project.image} alt={project.title} />
+            <div className="overlay">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                View Project
+              </a>
             </div>
           </div>
-        </motion.div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
-export default OurWork;
+export default OuerWork;
